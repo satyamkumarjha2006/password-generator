@@ -44,7 +44,7 @@ useEffect(() => {
   return(
     <div className='min-h-screen flex justify-center items-center bg-[#0B1020]'>
     <div 
-    className='w-full max-w-xl bg-[#151C30]/90 rounded-xl backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl p-8 md:p-10  '>
+    className='w-full max-w-xl bg-[#151C30]/90 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl p-8 md:p-10  '>
       <h1 className='text-3xl md:text-4xl font-extrabold tracking-tight bg-linear-to-r from-purple-400 to-pink-400 text-center py-4 bg-clip-text text-transparent'>Password Generator</h1>
       <div 
       className='flex items-center gap-2 bg-[#0B1020] border border-white/10 mt-8 rounded-xl p-3 ml-4 mr-4 '>
@@ -97,7 +97,7 @@ useEffect(() => {
       </div>
       <div className=' flex justify-center text-center text-lg mt-10 py-3'>
         <div className=' '></div>
-        <button className='bg-linear-to-r from-purple-600 to-pink-600 text-white text-3xl font-bold py-4 px-3 rounded-xl cursor-pointer hover:from-purple-500 to-pink-600'
+        <button className='bg-linear-to-r from-purple-600 to-pink-600 text-white text-3xl font-bold py-4 px-3 rounded-xl cursor-pointer hover:purple-500'
         onClick={generatePassword}
         >Generate Password</button>
       </div>
