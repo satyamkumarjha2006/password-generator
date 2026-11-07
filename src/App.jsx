@@ -50,8 +50,7 @@ useEffect(() => {
       className='flex items-center gap-2 bg-slate-900/90 border border-white/10 mt-8 rounded-xl p-3 ml-4 mr-4 '>
       <input
       id='password'
-      name='password'
-      type='password'
+      type='text'
       value={password}
       placeholder='Password'
       className='w-full bg-transparent outline-none tracking-wider px-4 py-3 text-white text-xl '
