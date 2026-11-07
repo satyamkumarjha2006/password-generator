@@ -50,7 +50,8 @@ useEffect(() => {
       className='flex items-center gap-2 bg-slate-900/90 border border-white/10 mt-8 rounded-xl p-3 ml-4 mr-4 '>
       <input
       id='password'
-      type='text'
+      name='password'
+      type='password'
       value={password}
       placeholder='Password'
       className='w-full bg-transparent outline-none tracking-wider px-4 py-3 text-white text-xl '
@@ -72,7 +73,7 @@ useEffect(() => {
           className='cursor-pointer rounded-lg appearance-none bg-purple-900 accent-purple-500'
           onChange={(e) => {setLength(e.target.value)}}
         />  
-        <label className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'> length : {length}</label>
+        <label htmlFor = "range" className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'> length : {length}</label>
         </div>
 
         <div className='flex '>
@@ -84,7 +85,7 @@ useEffect(() => {
           onChange={() => {setNumAllowed((prev) => !prev);
           }}
           />
-          <label className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'>Numbers</label>
+          <label htmlFor="checkbox" className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'>Numbers</label>
         </div>
         
         <div className='flex '>
@@ -95,7 +96,7 @@ useEffect(() => {
           className='cursor-pointer ml-3 accent-purple-500 bg-purple-500 '
           onChange={() => {setCharAllowed((prev) => !prev)}}
           />
-           <label className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'>Characters</label>
+           <label htmlFor="check" className='text-amber-600 px-2 hover:border-purple-500 border border-white/10'>Characters</label>
         </div>
 
       </div>
