@@ -49,6 +49,7 @@ useEffect(() => {
       <div 
       className='flex items-center gap-2 bg-slate-900/90 border border-white/10 mt-8 rounded-xl p-3 ml-4 mr-4 '>
       <input
+      id='password'
       type='text'
       value={password}
       placeholder='Password'
@@ -65,6 +66,7 @@ useEffect(() => {
         <div 
         className=' flex '>
           <input
+          id='range'
           type='range'
           value={length}
           className='cursor-pointer rounded-lg appearance-none bg-purple-900 accent-purple-500'
@@ -75,6 +77,7 @@ useEffect(() => {
 
         <div className='flex '>
           <input
+          id='checkbox'
           type='checkbox'
           defaultChecked = {numAllowed}
           className='cursor-pointer ml-3 accent-purple-500 bg-purple-500'
@@ -86,6 +89,7 @@ useEffect(() => {
         
         <div className='flex '>
           <input
+          id='check'
           type='checkbox'
           defaultChecked = {charAllowed}
           className='cursor-pointer ml-3 accent-purple-500 bg-purple-500 '
