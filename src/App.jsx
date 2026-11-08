@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -106,6 +106,7 @@ useEffect(() => {
         >Generate Password</button>
       </div>
     </div>
+    <Analytics/>
     </div>
    
   )
